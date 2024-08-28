@@ -1,7 +1,7 @@
 
 # Image-based Classification of Steel Surface Defects using Lightweight Convolutional Neural Networks (CNNs)
 
-This project showcases an image-based classification system for steel surface defects developed by adapting three popular CNN architectures: MobileNetV1, EfficientNetB0, and VGG-16 through transfer learning using the TensorFlow and Keras APIs. A grid search technique was also performed to obtain the most suitable learning rate parameter for the models, with all models achieving the best results using a learning rate of **0.0001**. Post-training quantization (PTQ) techniques, specifically Float16 (16-bit) and full integer (8-bit) quantization, were applied to the best-performing models for each architecture using TensorFlow Lite.
+This project showcases an image-based classification system for steel surface defects developed by adapting three popular CNN architectures: MobileNetV1, EfficientNetB0, and VGG-16 through transfer learning using the TensorFlow and Keras API. Grid search technique was also performed to obtain the most suitable learning rate parameter for the models, with all networks achieving the best results using a learning rate of **0.0001**. Post-training quantization (PTQ) techniques, specifically Float16 (16-bit) and full integer (8-bit) quantization, were applied to the best-performing models for each architecture using TensorFlow Lite.
 
 The 16-bit MobileNetV1 model experienced minimal accuracy degradation, achieving **94.44% ± 0.94%**. In contrast, the 8-bit MobileNetV1 model showed a significant performance reduction, with an accuracy of **58.07% ± 6.03%**. The 16-bit EfficientNetB0 model was able to preserve accuracy similar to the original model, achieving **99.48% ± 0.38%**. Minimal performance degradation was observed in the 8-bit EfficientNetB0 model, which attained an accuracy of **97.56% ± 1.01%**. Similarly, the 16-bit VGG-16 model maintained accuracy close to the original, achieving **99.63% ± 0.33%**. Minimal performance degradation was also observed in the 8-bit VGG-16 model, which achieved an accuracy of **99.56% ± 0.28%**. Additionally, the model sizes on disk were observed to decrease in accordance with their bit-precision.
 
@@ -39,6 +39,7 @@ The trained models were converted into the TensorFlow Lite version using the Ten
 
 **Libraries:** TensorFlow, Keras, Pandas, NumPy, Matplotlib, Scikit-learn
 
+**IDE:** Jupyter Notebook
 
 ## Results
 
