@@ -53,6 +53,11 @@ The trained models were converted into the TensorFlow Lite version using the Ten
 
 ![inftime](https://github.com/aaroncanillas/test-repo/blob/a4bfd68fe9b8a121122f67693877535e0f258f63/images/inference%20time%20results.png)
 
+
+The study successfully demonstrated that the MobileNetV1, EfficientNetB0, and VGG-16 models were able to perform well in classifying images of steel surface defects. EfficientNetB0 and VGG-16 models consistently demonstrated better accuracy, precision, and recall compared to MobileNetV1 models. Meanwhile, MobileNetV1 models have the advantage of having lower model sizes and inference time than the EfficientNetB0 and VGG-16 models. Accordingly, the EfficientNetB0 models acquired comparable accuracy, precision, and recall performances while acquiring lower inference time and model size than the VGG-16 models.
+The implementation of post-training quantization techniques has been effective in decreasing the model sizes across the three architectures, while only causing minimal performance degradation. Therefore, PTQ can be effectively implemented on applications that are resource-limited. The only exception to this was the case of the 8-bit quantized MobileNetV1 models, wherein quantization led to a significant decline in the model performance.
+
+
 ## References
 
  - Song, K., & Yan, Y. (2013). A noise robust method based on completed local binary patterns for hot-rolled steel strip surface defects. Applied Surface Science, 285, 858–864. https://doi.org/10.1016/j.apsusc.2013.09.002
