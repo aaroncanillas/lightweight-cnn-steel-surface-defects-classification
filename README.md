@@ -7,7 +7,7 @@ The 16-bit MobileNetV1 model experienced minimal accuracy degradation, achieving
 
 ## Methodology
 
-![Flowchart](https://github.com/aaroncanillas/test-repo/blob/8fa4ebf09b3d1282a91fa9395b90fc7ee6742b73/images/Flowchart.png)
+![Flowchart](https://github.com/aaroncanillas/lightweight-cnn-steel-surface-defects-classification/blob/1b960105e2498205084c6e5c046f5fa9d6fc7742/flowchart.png)
 
 **Data Collection**
 
@@ -43,15 +43,15 @@ The trained models were converted into the TensorFlow Lite version using the Ten
 
 ## Results
 
-![mb1](https://github.com/aaroncanillas/test-repo/blob/a4bfd68fe9b8a121122f67693877535e0f258f63/images/mobilenetv1%20results.png)
+![mb1](https://github.com/aaroncanillas/lightweight-cnn-steel-surface-defects-classification/blob/1b960105e2498205084c6e5c046f5fa9d6fc7742/results/mobilenetv1%20results.png)
 
-![eff0](https://github.com/aaroncanillas/test-repo/blob/a4bfd68fe9b8a121122f67693877535e0f258f63/images/efficientnetb0%20results.png)
+![eff0](https://github.com/aaroncanillas/lightweight-cnn-steel-surface-defects-classification/blob/1b960105e2498205084c6e5c046f5fa9d6fc7742/results/efficientnetb0%20results.png)
 
-![vgg16](https://github.com/aaroncanillas/test-repo/blob/a4bfd68fe9b8a121122f67693877535e0f258f63/images/vgg%2016%20results.png)
+![vgg16](https://github.com/aaroncanillas/lightweight-cnn-steel-surface-defects-classification/blob/1b960105e2498205084c6e5c046f5fa9d6fc7742/results/vgg%2016%20results.png)
 
-![modelsize](https://github.com/aaroncanillas/test-repo/blob/a4bfd68fe9b8a121122f67693877535e0f258f63/images/model%20size%20results.png)
+![modelsize](https://github.com/aaroncanillas/lightweight-cnn-steel-surface-defects-classification/blob/1b960105e2498205084c6e5c046f5fa9d6fc7742/results/model%20size%20results.png)
 
-![inftime](https://github.com/aaroncanillas/test-repo/blob/a4bfd68fe9b8a121122f67693877535e0f258f63/images/inference%20time%20results.png)
+![inftime](https://github.com/aaroncanillas/lightweight-cnn-steel-surface-defects-classification/blob/1b960105e2498205084c6e5c046f5fa9d6fc7742/results/inference%20time%20results.png)
 
 
 The study successfully demonstrated that the MobileNetV1, EfficientNetB0, and VGG-16 models were able to perform well in classifying images of steel surface defects. EfficientNetB0 and VGG-16 models consistently demonstrated better accuracy, precision, and recall compared to MobileNetV1 models. Meanwhile, MobileNetV1 models have the advantage of having lower model sizes and inference time than the EfficientNetB0 and VGG-16 models. Accordingly, the EfficientNetB0 models acquired comparable accuracy, precision, and recall performances while acquiring lower inference time and model size than the VGG-16 models.
