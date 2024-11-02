@@ -19,7 +19,7 @@ The size of the images in the dataset were reshaped into 224 × 224 pixels to ma
 
 **Model Development**
 
-Pre-trained MobileNetV1, EfficientNetB0, and VGG-16 models on the ImageNet database are adapted through the use of the transfer learning technique using Keras API. On top of the pre-trained models, two fully connected layer containing 128 neurons 28 and 64 neurons with ReLU activation functions were added respectively. A dropout layer of 20% dropout probability is included between the two fully connected layers to prevent overfitting and increase the performance on unseen data. Lastly, the output layer is composed of 6 nodes and a softmax activation function to classify the 6 surface defect classes.
+Pre-trained MobileNetV1, EfficientNetB0, and VGG-16 models on the ImageNet database are adapted through the use of the transfer learning technique using Keras API. On top of the pre-trained models, two fully connected layer containing 128 neurons and 64 neurons with ReLU activation functions were added respectively. A dropout layer of 20% dropout probability is included between the two fully connected layers to prevent overfitting and increase the performance on unseen data. Lastly, the output layer is composed of 6 nodes and a softmax activation function to classify the 6 surface defect classes.
 
 **Training the Model**
 
